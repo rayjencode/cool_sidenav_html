@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <title>Create Side Nav</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__btn">
+        <i class=" fas fa-bars"></i>
+      </div>
+      <div class="container nav__main">
+        <img class="nav__logo" src="img/logo.png" alt="logo" />
+        <ul class="nav__list nav__btn--show">
+          <li class="nav__link">
+            <a class="nav__item" href="#">Home</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="#">About</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="#">Service</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="#">Pricing</a>
+          </li>
+          <li class="nav__link">
+            <a class="nav__item" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container header">
+      <h1 class="header__heading">Let's Create Side Navigation</h1>
+      <p class="header__desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+        exercitationem nulla labore inventore, quos repellat? Modi et
+        consequuntur laboriosam cum!
+      </p>
+      <button class="btn">Learn More</button>
+    </div>
+
+    <script>
+      document
+        .querySelector(".nav__btn")
+        .addEventListener("click", () =>
+          document
+            .querySelector(".nav__list")
+            .classList.toggle("nav__btn--show")
+        );
+    </script>
+  </body>
+</html>
